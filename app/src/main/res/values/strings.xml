@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">OrderFood</string>
+    <string name="slogan">No matter where you are: Whether, you are at home, or in the office, or in the beach, we will find you and we will feed you</string>
+    <string name="btn_singup">Sing Up</string>
+    <string name="btn_sing_in">Sing In</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="hint_password">Password</string>
+    <string name="text_123456">123456</string>
+    <string name="edt_cristian">Cristian</string>
+    <string name="edt_0988123355">0988123355</string>
+    <string name="edt_hint_password">Password</string>
+    <string name="edt_name">Cristian</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="edt_hint_name">Name</string>
+</resources>
