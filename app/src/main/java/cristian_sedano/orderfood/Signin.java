@@ -1,6 +1,7 @@
 package cristian_sedano.orderfood;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -15,6 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
+import cristian_sedano.orderfood.Common.Common;
 import cristian_sedano.orderfood.Model.User;
 
 public class Signin extends AppCompatActivity {
@@ -56,7 +58,12 @@ public class Signin extends AppCompatActivity {
                             User user = dataSnapshot.child(edtPhone.getText().toString()).getValue(User.class);
 
                             if (user.getPassword().equals(edtPassword.getText().toString())) {
-                                Toast.makeText(Signin.this, "Sign In successfully", Toast.LENGTH_SHORT).show();
+                                {
+                                    Intent homeIntent = new Intent(Signin.this, Home.class);
+                                    Common.currentUser = user;
+                                    startActivity(homeIntent);
+                                    finish();
+                                }
                             } else {
                                 Toast.makeText(Signin.this, "Wrong Password !", Toast.LENGTH_SHORT).show();
                             }

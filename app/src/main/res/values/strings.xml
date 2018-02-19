@@ -12,4 +12,10 @@
     <string name="edt_name">Cristian</string>
     <string name="btn_sign_up">Sign Up</string>
     <string name="edt_hint_name">Name</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>
