@@ -8,12 +8,22 @@ public class User {
 
     private String Name;
     private String Password;
-
-    public User(){}
+    private String Phone;
 
     public User(String name, String password) {
         Name = name;
         Password = password;
+    }
+
+    public User() {
+    }
+
+    public String getPhone() {
+        return Phone;
+    }
+
+    public void setPhone(String phone) {
+        Phone = phone;
     }
 
     public String getName() {
