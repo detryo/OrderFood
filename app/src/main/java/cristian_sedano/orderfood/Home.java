@@ -24,6 +24,7 @@ import com.squareup.picasso.Picasso;
 import cristian_sedano.orderfood.Common.Common;
 import cristian_sedano.orderfood.Interface.ItemClickListener;
 import cristian_sedano.orderfood.Model.Category;
+import cristian_sedano.orderfood.Service.ListenOrder;
 import cristian_sedano.orderfood.ViewHolder.MenuViewHolder;
 
 public class Home extends AppCompatActivity
@@ -83,6 +84,10 @@ public class Home extends AppCompatActivity
         recycler_menu.setLayoutManager(layoutManager);
 
         loadMenu();
+
+        // Register Service
+        Intent service = new Intent(Home.this, ListenOrder.class);
+        startService(service);
 
     }
 
